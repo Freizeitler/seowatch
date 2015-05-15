@@ -13,7 +13,7 @@
 	box-sizing: border-box;
 	padding: 25px;
 	width: 260px;
-	height: 300px;
+	height: 340px;
 	background: #fff;
 	float: left;
 	margin: 10px 20px 10px 10px;
@@ -27,6 +27,14 @@
 		width: 100%;
 		box-sizing: border-box;
 		padding: 0 25px;
+		&:before {
+			content: 'content_goes_here...................................................................';
+			font-size: 0.6em;
+			position: relative;
+			top: -5px;
+			display: block;
+			overflow: hidden;
+		}
 	}
 }
 .tile-label {
@@ -36,9 +44,17 @@
 	border-radius: 3px 3px 0 0;
 	&.works {
 		background: $color-sulu;
+		&:before {
+			content: '\2713';
+			margin-right: 5px;
+		}
 	}
 	&.works-not {
 		background: $color-red;
+		&:before {
+			content: '\2718';
+			margin-right: 5px;
+		}
 	}
 }
 

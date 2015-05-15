@@ -528,7 +528,7 @@ h2, h3 {
   padding: 10px 25px;
   font-size: 2em;
   margin-bottom: 15px;
-  border-bottom: 1px dashed #1c140d;
+  border-bottom: 1px dotted #1c140d;
 }
 
 /* line 36, ../scss/_base.scss */
@@ -602,7 +602,7 @@ button span {
           box-sizing: border-box;
   padding: 25px;
   width: 260px;
-  height: 300px;
+  height: 340px;
   background: #fff;
   float: left;
   margin: 10px 20px 10px 10px;
@@ -625,8 +625,17 @@ button span {
           box-sizing: border-box;
   padding: 0 25px;
 }
+/* line 30, ../scss/sections/_main.scss */
+.tile h4:before {
+  content: 'content_goes_here...................................................................';
+  font-size: 0.6em;
+  position: relative;
+  top: -5px;
+  display: block;
+  overflow: hidden;
+}
 
-/* line 32, ../scss/sections/_main.scss */
+/* line 40, ../scss/sections/_main.scss */
 .tile-label {
   padding: 5px 0 5px 25px;
   margin: -25px -25px 0 -25px;
@@ -635,13 +644,23 @@ button span {
      -moz-border-radius: 3px 3px 0 0;
           border-radius: 3px 3px 0 0;
 }
-/* line 37, ../scss/sections/_main.scss */
+/* line 45, ../scss/sections/_main.scss */
 .tile-label.works {
   background: #cbe86b;
 }
-/* line 40, ../scss/sections/_main.scss */
+/* line 47, ../scss/sections/_main.scss */
+.tile-label.works:before {
+  content: '\2713';
+  margin-right: 5px;
+}
+/* line 52, ../scss/sections/_main.scss */
 .tile-label.works-not {
   background: #e86b6b;
+}
+/* line 54, ../scss/sections/_main.scss */
+.tile-label.works-not:before {
+  content: '\2718';
+  margin-right: 5px;
 }
 
 /**

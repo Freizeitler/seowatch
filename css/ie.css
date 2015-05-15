@@ -528,7 +528,7 @@ h2, h3 {
   padding: 10px 25px;
   font-size: 2em;
   margin-bottom: 15px;
-  border-bottom: 1px dashed #1c140d;
+  border-bottom: 1px dotted #1c140d;
 }
 
 /* line 36, ../scss/_base.scss */
@@ -559,5 +559,4 @@ button span {
   display: block;
   font-size: 0.8em;
 }
-
 /*# sourceMappingURL=ie.css.map */
