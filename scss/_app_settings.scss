@@ -7,12 +7,17 @@
 */
 
 // Colors (take naming ideas from http://chir.ag/projects/name-that-color/)
-$color-default: rgb(30,30,30);
+$color-default: #fff;
+$color-sulu: rgba(203, 232, 107, 1);
+$color-night-rider: rgba(28, 20, 13, 1);
+$color-dawn-pink: rgba(242, 233, 225, 1);
+$color-red: rgba(232, 107, 107, 1);
+$color-default: $color-night-rider;
 
 // Fonts
 $font-default: normal 1em/1.4 sans-serif;
 @mixin font-text {
-	font: 400 1em/1.4 $font-text;
+	font: $font-default;
 	color: $color-default;
 }
 

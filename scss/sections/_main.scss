@@ -1,0 +1,45 @@
+/**
+* Example
+*
+* @desc Just an example file
+* @author [XX]
+* @dependency _app_settingsscss
+*/
+
+.main { 
+	padding: 50px;
+}
+.tile {
+	box-sizing: border-box;
+	padding: 25px;
+	width: 260px;
+	height: 300px;
+	background: #fff;
+	float: left;
+	margin: 10px 20px 10px 10px;
+	border-radius: 3px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+.tile-label {
+	padding: 5px 0 5px 25px;
+	margin: -25px -25px 0 -25px;
+	font-size: 0.9em;
+	border-radius: 3px 3px 0 0;
+	&.works {
+		background: $color-sulu;
+	}
+	&.works-not {
+		background: $color-red;
+	}
+}
+
+// Media Queries (from min to max)
+@media (min-width: $breakpoint-min) { }
+
+@media (min-width: $breakpoint-small) { }
+
+@media (min-width: $breakpoint-medium) { }
+
+@media (min-width: $breakpoint-large) { }
+
+@media (min-width: $breakpoint-max) { }

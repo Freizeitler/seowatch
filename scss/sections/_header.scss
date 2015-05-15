@@ -1,0 +1,24 @@
+/**
+* Example
+*
+* @desc Just an example file
+* @author [XX]
+* @dependency _app_settingsscss
+*/
+
+.header {
+	background: $color-sulu;
+	border-bottom: 5px solid $color-night-rider;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+// Media Queries (from min to max)
+@media (min-width: $breakpoint-min) { }
+
+@media (min-width: $breakpoint-small) { }
+
+@media (min-width: $breakpoint-medium) { }
+
+@media (min-width: $breakpoint-large) { }
+
+@media (min-width: $breakpoint-max) { }

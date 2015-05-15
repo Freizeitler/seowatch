@@ -7,7 +7,54 @@
 */
 
 // Common Styles
-body { }
+body { 
+	background: url(../images/project_papper.png);
+	@include font-text;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	font-weight: normal;
+	line-height: 1.2;
+	span {
+		display: block;
+		font-size: 0.53em;
+	}
+}
+h1 {
+	padding: 10px 25px;
+	font-size: 2em;
+	margin-left: 50px;
+	background: #fff;
+	margin-bottom: 0;
+}
+h2, h3 {
+	padding: 10px 25px;
+	font-size: 2em;
+	margin-bottom: 15px;
+	border-bottom: 1px dashed $color-night-rider;
+}
+h3 {
+	font-size: 1.2em;
+	padding: 10px 0;
+}
+h4 {
+	font-weight: bold;
+}
+button {
+	background: none;
+	border: none;
+	display: block; 
+	padding: 10px 0;
+	text-align: center;
+	background: #eee;
+	margin-bottom: 1em;
+	width: 100%;
+	line-height: 1.2;
+	span {
+		display: block;
+		font-size: 0.8em;
+	}
+}
 
 // Media Queries (from min to max)
 @media (min-width: $breakpoint-min) { }
