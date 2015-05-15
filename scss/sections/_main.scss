@@ -19,6 +19,15 @@
 	margin: 10px 20px 10px 10px;
 	border-radius: 3px;
 	box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+	position: relative;
+	h4 {		
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 25px;
+	}
 }
 .tile-label {
 	padding: 5px 0 5px 25px;
