@@ -518,31 +518,32 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 h1 {
   padding: 10px 25px;
   font-size: 2em;
-  margin-left: 50px;
+  margin-left: 35px;
   background: #fff;
   margin-bottom: 0;
+  border-left: 15px solid #e86b6b;
 }
 
-/* line 30, ../scss/_base.scss */
+/* line 31, ../scss/_base.scss */
 h2, h3 {
   padding: 10px 25px;
-  font-size: 2em;
+  font-size: 1.6em;
   margin-bottom: 15px;
   border-bottom: 1px dotted #1c140d;
 }
 
-/* line 36, ../scss/_base.scss */
+/* line 37, ../scss/_base.scss */
 h3 {
   font-size: 1.2em;
   padding: 10px 0;
 }
 
-/* line 40, ../scss/_base.scss */
+/* line 41, ../scss/_base.scss */
 h4 {
   font-weight: bold;
 }
 
-/* line 43, ../scss/_base.scss */
+/* line 44, ../scss/_base.scss */
 button {
   background: none;
   border: none;
@@ -554,7 +555,7 @@ button {
   width: 100%;
   line-height: 1.2;
 }
-/* line 53, ../scss/_base.scss */
+/* line 54, ../scss/_base.scss */
 button span {
   display: block;
   font-size: 0.8em;

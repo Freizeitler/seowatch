@@ -51,6 +51,7 @@
 	}
 	&.works-not {
 		background: $color-red;
+		color: #fff;
 		&:before {
 			content: '\2718';
 			margin-right: 5px;
