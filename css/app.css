@@ -511,7 +511,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 18, ../scss/_base.scss */
 h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   display: block;
-  font-size: 0.421em;
+  font-size: 0.42em;
 }
 
 /* line 23, ../scss/_base.scss */
@@ -597,6 +597,11 @@ button span {
 }
 
 /* line 12, ../scss/sections/_main.scss */
+.section {
+  margin-bottom: 50px;
+}
+
+/* line 15, ../scss/sections/_main.scss */
 .tile {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -615,7 +620,7 @@ button span {
           box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
   position: relative;
 }
-/* line 23, ../scss/sections/_main.scss */
+/* line 26, ../scss/sections/_main.scss */
 .tile h4 {
   position: absolute;
   left: 0;
@@ -626,7 +631,7 @@ button span {
           box-sizing: border-box;
   padding: 0 25px;
 }
-/* line 30, ../scss/sections/_main.scss */
+/* line 33, ../scss/sections/_main.scss */
 .tile h4:before {
   content: 'content_goes_here...................................................................';
   font-size: 0.6em;
@@ -636,7 +641,7 @@ button span {
   overflow: hidden;
 }
 
-/* line 40, ../scss/sections/_main.scss */
+/* line 43, ../scss/sections/_main.scss */
 .tile-label {
   padding: 5px 0 5px 25px;
   margin: -25px -25px 0 -25px;
@@ -645,23 +650,33 @@ button span {
      -moz-border-radius: 3px 3px 0 0;
           border-radius: 3px 3px 0 0;
 }
-/* line 45, ../scss/sections/_main.scss */
+/* line 48, ../scss/sections/_main.scss */
 .tile-label.works {
   background: #cbe86b;
 }
-/* line 47, ../scss/sections/_main.scss */
+/* line 50, ../scss/sections/_main.scss */
 .tile-label.works:before {
   content: '\2713';
   margin-right: 5px;
 }
-/* line 52, ../scss/sections/_main.scss */
+/* line 55, ../scss/sections/_main.scss */
 .tile-label.works-not {
   background: #e86b6b;
   color: #fff;
 }
-/* line 55, ../scss/sections/_main.scss */
+/* line 58, ../scss/sections/_main.scss */
 .tile-label.works-not:before {
   content: '\2718';
+  margin-right: 5px;
+}
+/* line 63, ../scss/sections/_main.scss */
+.tile-label.pending {
+  background: #999;
+  color: #fff;
+}
+/* line 66, ../scss/sections/_main.scss */
+.tile-label.pending:before {
+  content: '?';
   margin-right: 5px;
 }
 

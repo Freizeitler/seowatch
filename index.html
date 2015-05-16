@@ -49,16 +49,17 @@
 
 <body>
 	<header class="header" role="banner">
-		<h1>Hidden or not? <span>Testing Googlebot's Superpowers</span></h1>
+		<h1>Hidden or not? <span>Testing Searchengine's Superpowers</span></h1>
 	</header>
 	<main class="main" role="main">	
-		<section class="bv-cf">
-			<h2>CSS Techniques</h2>
+
+		<section class="section bv-cf">
+			<h2>CSS Techniques for Hiding Content</h2>
 
 			<div class="tile dnwb">
 				<div class="tile-label works">works</div>
 				<h3><code>display: none</code> with show-button</h3>
-				<p>Description...<br />Description...<br />Description...</p>
+				<p>Does the Searchengine index the hidden content if there's a button to reveal it?</p>
 				<div class="tile-test">
 					<button class="show-content"><span>Press Here To</span> Show Content</button>
 					<h4 class="content">[DNWB] Display None With Button</h4>
@@ -68,13 +69,75 @@
 			<div class="tile dnnb works-not">
 				<div class="tile-label works-not">works not</div>
 				<h3><code>display: none</code> without show-button</h3>
+				<p>Content is hidden with no possibility to reveal it. Get the content from the source code.</p>
+				<div class="tile-test">
+					<h4 class="content">[DNNB] Display None No Button</h4>
+				</div>
+			</div>
+
+			<div class="tile dnnb works-not">
+				<div class="tile-label works">works</div>
+				<h3><code>visibility: hidden</code> with show-button</h3>
+				<p>Does the Searchengine index the hidden content if there's a button to reveal it?</p>
+				<div class="tile-test">
+					<button class="show-content"><span>Press Here To</span> Show Content</button>
+					<h4 class="content">[VHWB] Visibility Hidden With Button</h4>
+				</div>
+			</div>
+
+			<div class="tile dnnb works-not">
+				<div class="tile-label works-not">works not</div>
+				<h3><code>visibility: hidden</code> without show-button</h3>
+				<p>Content is hidden with no possibility to reveal it. Get the content from the source code.</p>
+				<div class="tile-test">
+					<h4 class="content">[VHNB] Visibility Hidden No Button</h4>
+				</div>
+			</div>
+		</section>
+
+		<section class="section bv-cf">
+			<h2>JS and jQuery to Append Content</h2>
+
+			<div class="tile dnwb">
+				<div class="tile-label works">works</div>
+				<h3>jQuery: <code>append()</code></h3>
+				<p>Description...<br />Description...<br />Description...</p>
+				<div class="tile-test">
+					<button class="show-content"><span>Press Here To</span> Show Content</button>
+					<h4 class="content">[DNWB] Display None With Button</h4>
+				</div>
+			</div>
+
+			<div class="tile dnnb works-not">
+				<div class="tile-label pending">pending&hellip;</div>
+				<h3>jQuery: <code>prepend()</code></h3>
 				<p>Description...<br />Description...<br />Description...</p>
 				<div class="tile-test">
 					<h4 class="content">[DNNB] Display None No Button</h4>
 				</div>
 			</div>
 
+			<div class="tile dnnb works-not">
+				<div class="tile-label works">works</div>
+				<h3>jQuery: <code>html()</code></h3>
+				<p>Description...<br />Description...<br />Description...</p>
+				<div class="tile-test">
+					<button class="show-content"><span>Press Here To</span> Show Content</button>
+					<h4 class="content">[VHWB] Visibility Hidden With Button</h4>
+				</div>
+			</div>
+
+			<div class="tile dnnb works-not">
+				<div class="tile-label works-not">works not</div>
+				<h3>jQuery: <code>text()</code></h3>
+				<p>Description...<br />Description...<br />Description...</p>
+				<div class="tile-test">
+					<h4 class="content">[VHNB] Visibility Hidden No Button</h4>
+				</div>
+			</div>
 		</section>
+		
+
 	</main>
 	<aside class="aside" role="complementary"></aside>
 	<footer class="footer" role="contentinfo"></footer>

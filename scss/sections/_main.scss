@@ -9,6 +9,9 @@
 .main { 
 	padding: 50px;
 }
+.section {
+	margin-bottom: 50px;
+}
 .tile {
 	box-sizing: border-box;
 	padding: 25px;
@@ -54,6 +57,14 @@
 		color: #fff;
 		&:before {
 			content: '\2718';
+			margin-right: 5px;
+		}
+	}
+	&.pending {
+		background: #999;
+		color: #fff;
+		&:before {
+			content: '?';
 			margin-right: 5px;
 		}
 	}

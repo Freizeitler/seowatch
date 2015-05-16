@@ -511,7 +511,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 18, ../scss/_base.scss */
 h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   display: block;
-  font-size: 0.421em;
+  font-size: 0.42em;
 }
 
 /* line 23, ../scss/_base.scss */
@@ -560,5 +560,4 @@ button span {
   display: block;
   font-size: 0.8em;
 }
-
 /*# sourceMappingURL=ie.css.map */
