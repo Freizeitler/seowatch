@@ -6,10 +6,10 @@
 * @dependency _app_settingsscss
 */
 
-.header {
-	background: $color-sulu;
-	border-bottom: 5px solid $color-night-rider;
-	box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+.footer {
+	font-size: 0.9em;
+	padding: 25px 0 25px 75px;
+	border-top: 1px dotted $color-night-rider;
 }
 
 // Media Queries (from min to max)

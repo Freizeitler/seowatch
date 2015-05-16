@@ -458,7 +458,7 @@ th {
 * Settings
 *
 * @desc Place variables and mixings for default settings here
-* @author [XX]
+* @author @Freizeitler
 * @dependency none
 */
 /**
@@ -492,7 +492,7 @@ th {
 * Basic Styles
 *
 * @desc Basic and common styles. Formats for every device live in Common Styles, for device-specific stylings use Mobile First approach.
-* @author [XX]
+* @author @Freizeitler
 * @dependency _app_settingsscss
 */
 /* line 10, ../scss/_base.scss */
@@ -508,13 +508,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   line-height: 1.2;
 }
-/* line 18, ../scss/_base.scss */
-h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
-  display: block;
-  font-size: 0.42em;
-}
 
-/* line 23, ../scss/_base.scss */
+/* line 19, ../scss/_base.scss */
 h1 {
   padding: 10px 25px;
   font-size: 2em;
@@ -522,6 +517,11 @@ h1 {
   background: #fff;
   margin-bottom: 0;
   border-left: 15px solid #e86b6b;
+}
+/* line 26, ../scss/_base.scss */
+h1 span {
+  display: block;
+  font-size: 0.42em;
 }
 
 /* line 31, ../scss/_base.scss */
@@ -562,17 +562,45 @@ button span {
 }
 
 /**
-* Example
+* Tests
 *
-* @desc Just an example file
-* @author [XX]
+* @desc CSS for the tests
+* @author @Freizeitler
 * @dependency _app_settingsscss
 */
+/* line 11, ../scss/modules/_tests.scss */
+.dnwb .content span {
+  display: none;
+}
+/* line 14, ../scss/modules/_tests.scss */
+.dnwb .content.active span {
+  display: block;
+}
+
+/* line 22, ../scss/modules/_tests.scss */
+.dnnb .content span {
+  display: none;
+}
+
+/* line 30, ../scss/modules/_tests.scss */
+.vhwb .content span {
+  visibility: hidden;
+}
+/* line 33, ../scss/modules/_tests.scss */
+.vhwb .content.active span {
+  visibility: visible;
+}
+
+/* line 41, ../scss/modules/_tests.scss */
+.vhnb .content span {
+  visibility: hidden;
+}
+
 /**
-* Example
+* Header
 *
-* @desc Just an example file
-* @author [XX]
+* @desc Styles for the Header
+* @author @Freizeitler
 * @dependency _app_settingsscss
 */
 /* line 9, ../scss/sections/_header.scss */
@@ -585,10 +613,10 @@ button span {
 }
 
 /**
-* Example
+* Main Section
 *
-* @desc Just an example file
-* @author [XX]
+* @desc Styles for elements within the main section
+* @author @Freizeitler
 * @dependency _app_settingsscss
 */
 /* line 9, ../scss/sections/_main.scss */
@@ -621,7 +649,7 @@ button span {
   position: relative;
 }
 /* line 26, ../scss/sections/_main.scss */
-.tile h4 {
+.tile .content {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -630,9 +658,10 @@ button span {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 25px;
+  height: 50px;
 }
-/* line 33, ../scss/sections/_main.scss */
-.tile h4:before {
+/* line 34, ../scss/sections/_main.scss */
+.tile .content:before {
   content: 'content_goes_here...................................................................';
   font-size: 0.6em;
   position: relative;
@@ -641,7 +670,7 @@ button span {
   overflow: hidden;
 }
 
-/* line 43, ../scss/sections/_main.scss */
+/* line 44, ../scss/sections/_main.scss */
 .tile-label {
   padding: 5px 0 5px 25px;
   margin: -25px -25px 0 -25px;
@@ -650,34 +679,48 @@ button span {
      -moz-border-radius: 3px 3px 0 0;
           border-radius: 3px 3px 0 0;
 }
-/* line 48, ../scss/sections/_main.scss */
+/* line 49, ../scss/sections/_main.scss */
 .tile-label.works {
   background: #cbe86b;
 }
-/* line 50, ../scss/sections/_main.scss */
+/* line 51, ../scss/sections/_main.scss */
 .tile-label.works:before {
   content: '\2713';
   margin-right: 5px;
 }
-/* line 55, ../scss/sections/_main.scss */
+/* line 56, ../scss/sections/_main.scss */
 .tile-label.works-not {
   background: #e86b6b;
   color: #fff;
 }
-/* line 58, ../scss/sections/_main.scss */
+/* line 59, ../scss/sections/_main.scss */
 .tile-label.works-not:before {
   content: '\2718';
   margin-right: 5px;
 }
-/* line 63, ../scss/sections/_main.scss */
+/* line 64, ../scss/sections/_main.scss */
 .tile-label.pending {
   background: #999;
   color: #fff;
 }
-/* line 66, ../scss/sections/_main.scss */
+/* line 67, ../scss/sections/_main.scss */
 .tile-label.pending:before {
   content: '?';
   margin-right: 5px;
+}
+
+/**
+* Header
+*
+* @desc Styles for the Header
+* @author @Freizeitler
+* @dependency _app_settingsscss
+*/
+/* line 9, ../scss/sections/_footer.scss */
+.footer {
+  font-size: 0.9em;
+  padding: 25px 0 25px 75px;
+  border-top: 1px dotted #1c140d;
 }
 
 /**

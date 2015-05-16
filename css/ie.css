@@ -458,7 +458,7 @@ th {
 * Settings
 *
 * @desc Place variables and mixings for default settings here
-* @author [XX]
+* @author @Freizeitler
 * @dependency none
 */
 /**
@@ -492,7 +492,7 @@ th {
 * Basic Styles
 *
 * @desc Basic and common styles. Formats for every device live in Common Styles, for device-specific stylings use Mobile First approach.
-* @author [XX]
+* @author @Freizeitler
 * @dependency _app_settingsscss
 */
 /* line 10, ../scss/_base.scss */
@@ -508,13 +508,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   line-height: 1.2;
 }
-/* line 18, ../scss/_base.scss */
-h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
-  display: block;
-  font-size: 0.42em;
-}
 
-/* line 23, ../scss/_base.scss */
+/* line 19, ../scss/_base.scss */
 h1 {
   padding: 10px 25px;
   font-size: 2em;
@@ -522,6 +517,11 @@ h1 {
   background: #fff;
   margin-bottom: 0;
   border-left: 15px solid #e86b6b;
+}
+/* line 26, ../scss/_base.scss */
+h1 span {
+  display: block;
+  font-size: 0.42em;
 }
 
 /* line 31, ../scss/_base.scss */

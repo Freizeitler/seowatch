@@ -61,36 +61,36 @@
 				<h3><code>display: none</code> with show-button</h3>
 				<p>Does the Searchengine index the hidden content if there's a button to reveal it?</p>
 				<div class="tile-test">
-					<button class="show-content"><span>Press Here To</span> Show Content</button>
-					<h4 class="content">[DNWB] Display None With Button</h4>
+					<button class="show-content js-reveal"><span>Press Here To</span> Show Content</button>
+					<h4 class="content"><span>[DNWB] Display None With Button</span></h4>
 				</div>
 			</div>
 
-			<div class="tile dnnb works-not">
+			<div class="tile dnnb">
 				<div class="tile-label works-not">works not</div>
 				<h3><code>display: none</code> without show-button</h3>
 				<p>Content is hidden with no possibility to reveal it. Get the content from the source code.</p>
 				<div class="tile-test">
-					<h4 class="content">[DNNB] Display None No Button</h4>
+					<h4 class="content"><span>[DNNB] Display None No Button</span></h4>
 				</div>
 			</div>
 
-			<div class="tile dnnb works-not">
+			<div class="tile vhwb">
 				<div class="tile-label works">works</div>
 				<h3><code>visibility: hidden</code> with show-button</h3>
-				<p>Does the Searchengine index the hidden content if there's a button to reveal it?</p>
+				<p>Does the Searchengine index the hidden content if there's a revealing button?</p>
 				<div class="tile-test">
-					<button class="show-content"><span>Press Here To</span> Show Content</button>
-					<h4 class="content">[VHWB] Visibility Hidden With Button</h4>
+					<button class="show-content js-reveal"><span>Press Here To</span> Show Content</button>
+					<h4 class="content"><span>[VHWB] Visibility Hidden With Button</span></h4>
 				</div>
 			</div>
 
-			<div class="tile dnnb works-not">
+			<div class="tile vhnb">
 				<div class="tile-label works-not">works not</div>
 				<h3><code>visibility: hidden</code> without show-button</h3>
 				<p>Content is hidden with no possibility to reveal it. Get the content from the source code.</p>
 				<div class="tile-test">
-					<h4 class="content">[VHNB] Visibility Hidden No Button</h4>
+					<h4 class="content"><span>[VHNB] Visibility Hidden No Button</span></h4>
 				</div>
 			</div>
 		</section>
@@ -103,8 +103,8 @@
 				<h3>jQuery: <code>append()</code></h3>
 				<p>Description...<br />Description...<br />Description...</p>
 				<div class="tile-test">
-					<button class="show-content"><span>Press Here To</span> Show Content</button>
-					<h4 class="content">[DNWB] Display None With Button</h4>
+					<button class="show-content js-reveal"><span>Press Here To</span> Show Content</button>
+					<h4 class="content"><span>[DNWB] Display None With Button</span></h4>
 				</div>
 			</div>
 
@@ -113,7 +113,7 @@
 				<h3>jQuery: <code>prepend()</code></h3>
 				<p>Description...<br />Description...<br />Description...</p>
 				<div class="tile-test">
-					<h4 class="content">[DNNB] Display None No Button</h4>
+					<h4 class="content"><span>[DNNB] Display None No Button</span></h4>
 				</div>
 			</div>
 
@@ -122,8 +122,8 @@
 				<h3>jQuery: <code>html()</code></h3>
 				<p>Description...<br />Description...<br />Description...</p>
 				<div class="tile-test">
-					<button class="show-content"><span>Press Here To</span> Show Content</button>
-					<h4 class="content">[VHWB] Visibility Hidden With Button</h4>
+					<button class="show-content js-reveal"><span>Press Here To</span> Show Content</button>
+					<h4 class="content"><span>[VHWB] Visibility Hidden With Button</span></h4>
 				</div>
 			</div>
 
@@ -132,7 +132,7 @@
 				<h3>jQuery: <code>text()</code></h3>
 				<p>Description...<br />Description...<br />Description...</p>
 				<div class="tile-test">
-					<h4 class="content">[VHNB] Visibility Hidden No Button</h4>
+					<h4 class="content"><span>[VHNB] Visibility Hidden No Button</span></h4>
 				</div>
 			</div>
 		</section>
@@ -140,7 +140,9 @@
 
 	</main>
 	<aside class="aside" role="complementary"></aside>
-	<footer class="footer" role="contentinfo"></footer>
+	<footer class="footer" role="contentinfo">
+		&copy; Henry Zeitler | <a href="" title="Disclaimer on www.freizeitler.de">Disclaimer</a>
+	</footer>
 
 	<script src="vendor/modernizr.custom.67687.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

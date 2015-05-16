@@ -1,0 +1,56 @@
+/**
+* Tests
+*
+* @desc CSS for the tests
+* @author @Freizeitler
+* @dependency _app_settingsscss
+*/
+
+.dnwb {
+	.content {
+		span {
+			display: none;
+		}
+		&.active span {
+			display: block;
+		}
+	}
+}
+
+.dnnb {
+	.content {
+		span {
+			display: none;
+		}
+	}
+}
+
+.vhwb {
+	.content {
+		span {
+			visibility: hidden;
+		}
+		&.active span {
+			visibility: visible;
+		}
+	}
+}
+
+.vhnb {
+	.content {
+		span {
+			visibility: hidden;
+		}
+	}
+}
+
+// Media Queries (from min to max)
+@media (min-width: $breakpoint-min) { }
+
+@media (min-width: $breakpoint-small) { }
+
+@media (min-width: $breakpoint-medium) { }
+
+@media (min-width: $breakpoint-large) { }
+
+@media (min-width: $breakpoint-max) { }

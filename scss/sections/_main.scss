@@ -1,8 +1,8 @@
 /**
-* Example
+* Main Section
 *
-* @desc Just an example file
-* @author [XX]
+* @desc Styles for elements within the main section
+* @author @Freizeitler
 * @dependency _app_settingsscss
 */
 
@@ -23,13 +23,14 @@
 	border-radius: 3px;
 	box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 	position: relative;
-	h4 {		
+	.content {		
 		position: absolute;
 		left: 0;
 		bottom: 0;
 		width: 100%;
 		box-sizing: border-box;
 		padding: 0 25px;
+		height: 50px;
 		&:before {
 			content: 'content_goes_here...................................................................';
 			font-size: 0.6em;
