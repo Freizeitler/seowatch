@@ -36,6 +36,8 @@
 	<meta property="fb:admins" content="Facebook numeric ID" />
 
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="import" href="/vendor/bower/polymer/polymer.html">
+	<link rel="import" href="component/super-content.html">
 
 	<style type="text/css">
 		/* Above-The-Fold-Styles go here */
@@ -136,7 +138,20 @@
 				</div>
 			</div>
 		</section>
-		
+
+		<section class="section bv-cf">
+			<h2>Webcomponent</h2>
+
+			<div class="tile webc">
+				<div class="tile-label works">works</div>
+				<h3>Webcomponent with <code>rel="import"</code></h3>
+				<p>This is a Webcomponent imported with Polymer.</p>
+				<div class="tile-test">
+					<h4 class="content"><super-content></super-content></h4>
+				</div>
+			</div>
+
+		</section>		
 
 	</main>
 	<aside class="aside" role="complementary"></aside>
