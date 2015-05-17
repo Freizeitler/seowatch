@@ -10,6 +10,18 @@ $.fn.revealButton = function() {
 	});
 };
 
+var getGameData = (function() {
+    $.ajax({
+        'async': false,
+        'global': false,
+        'url': '/json/external-data.json',
+        'dataType': "json",
+        'success': function(data) {
+            $('.jaxnb').find('.content').find('span').append(data.shortcut + ' ' + data.description);
+        }
+    });
+})();
+
 // Init
 $(document).ready(function() {
 	$('.js-reveal').revealButton();
@@ -19,6 +31,7 @@ $(document).ready(function() {
 	$('.jhnb').find('.content').find('span').html('[JHNB] jQuery html No Button');
 	$('.jtnb').find('.content').find('span').text('[JTNB] jQuery text No Button');
 
+	$('.jlnb').find('.content').find('span').load('/component/external-content.html .jlnb');
 });
 
 $(document).ready(function() {
