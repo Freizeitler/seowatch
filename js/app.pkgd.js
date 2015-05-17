@@ -13,5 +13,10 @@ $.fn.revealButton = function() {
 // Init
 $(document).ready(function() {
 	$('.js-reveal').revealButton();
+
+	$('.janb').find('.content').find('span').append('[JANB] jQuery Append No Button');
+	$('.jpnb').find('.content').find('span').prepend('[JPNB] jQuery Prepend No Button');
+	$('.jhnb').find('.content').find('span').html('[JHNB] jQuery Html No Button');
+	$('.jtnb').find('.content').find('span').text('[JTNB] jQuery Text No Button');
 });
 //# sourceMappingURL=app.pkgd.js.map
