@@ -687,26 +687,58 @@ button span {
 .tile-label.works:before {
   content: '\2713';
   margin-right: 5px;
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  color: #cbe86b;
+  text-align: center;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  position: relative;
+  font-weight: bold;
 }
-/* line 56, ../scss/sections/_main.scss */
+/* line 65, ../scss/sections/_main.scss */
 .tile-label.works-not {
   background: #e86b6b;
   color: #fff;
 }
-/* line 59, ../scss/sections/_main.scss */
+/* line 68, ../scss/sections/_main.scss */
 .tile-label.works-not:before {
   content: '\2718';
   margin-right: 5px;
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  color: #e86b6b;
+  text-align: center;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  position: relative;
+  font-weight: bold;
 }
-/* line 64, ../scss/sections/_main.scss */
+/* line 82, ../scss/sections/_main.scss */
 .tile-label.pending {
   background: #999;
   color: #fff;
 }
-/* line 67, ../scss/sections/_main.scss */
+/* line 85, ../scss/sections/_main.scss */
 .tile-label.pending:before {
   content: '?';
-  margin-right: 5px;
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  color: #999;
+  text-align: center;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  position: relative;
+  font-weight: bold;
 }
 
 /**
