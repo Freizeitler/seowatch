@@ -14,8 +14,15 @@ $.fn.revealButton = function() {
 $(document).ready(function() {
 	$('.js-reveal').revealButton();
 
-	$('.janb').find('.content').find('span').append('[JANB] jQuery Append No Button');
-	$('.jpnb').find('.content').find('span').prepend('[JPNB] jQuery Prepend No Button');
-	$('.jhnb').find('.content').find('span').html('[JHNB] jQuery Html No Button');
-	$('.jtnb').find('.content').find('span').text('[JTNB] jQuery Text No Button');
+	$('.janb').find('.content').find('span').append('[JANB] jQuery append No Button');
+	$('.jpnb').find('.content').find('span').prepend('[JPNB] jQuery prepend No Button');
+	$('.jhnb').find('.content').find('span').html('[JHNB] jQuery html No Button');
+	$('.jtnb').find('.content').find('span').text('[JTNB] jQuery text No Button');
+
+});
+
+$(document).ready(function() {
+	var target = document.querySelector('.jinb .content span');
+	target.innerHTML = '[JINB] JavaScript innerHTML No Button';
+
 });
