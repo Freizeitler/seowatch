@@ -739,6 +739,7 @@ button span {
           border-radius: 50%;
   position: relative;
   font-weight: bold;
+  margin-right: 5px;
 }
 
 /**
