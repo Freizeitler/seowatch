@@ -6,11 +6,17 @@
 * @dependency _app_settingsscss
 */
 
-.main { 
-	padding: 50px;
+.main { 	
+	@media (min-width: $breakpoint-min) {
+		padding: 25px 15px;
+	}
+	@media (min-width: $breakpoint-small) {
+		padding: 50px;
+	}
 }
 .section {
 	margin-bottom: 50px;
+	clear: both;
 }
 .tile {
 	box-sizing: border-box;
@@ -23,6 +29,10 @@
 	border-radius: 3px;
 	box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 	position: relative;
+	p {
+		padding: 0;
+		max-width: 600px;
+	}
 	.content {		
 		position: absolute;
 		left: 0;
@@ -42,7 +52,7 @@
 	}
 }
 .tile-label {
-	padding: 5px 0 5px 25px;
+	padding: 5px 0 5px 17px;
 	margin: -25px -25px 0 -25px;
 	font-size: 0.9em;
 	border-radius: 3px 3px 0 0;

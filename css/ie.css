@@ -544,6 +544,11 @@ h4 {
 }
 
 /* line 44, ../scss/_base.scss */
+p {
+  padding-left: 25px;
+}
+
+/* line 47, ../scss/_base.scss */
 button {
   background: none;
   border: none;
@@ -555,9 +560,19 @@ button {
   width: 100%;
   line-height: 1.2;
 }
-/* line 54, ../scss/_base.scss */
+/* line 57, ../scss/_base.scss */
 button span {
   display: block;
   font-size: 0.8em;
+}
+
+/* line 62, ../scss/_base.scss */
+blockquote {
+  margin: 0 0 25px 100px;
+  border-left: 10px solid #ddd;
+  padding: 10px;
+  font-style: italic;
+  font-size: 0.9em;
+  float: right;
 }
 /*# sourceMappingURL=ie.css.map */

@@ -544,6 +544,11 @@ h4 {
 }
 
 /* line 44, ../scss/_base.scss */
+p {
+  padding-left: 25px;
+}
+
+/* line 47, ../scss/_base.scss */
 button {
   background: none;
   border: none;
@@ -555,10 +560,20 @@ button {
   width: 100%;
   line-height: 1.2;
 }
-/* line 54, ../scss/_base.scss */
+/* line 57, ../scss/_base.scss */
 button span {
   display: block;
   font-size: 0.8em;
+}
+
+/* line 62, ../scss/_base.scss */
+blockquote {
+  margin: 0 0 25px 100px;
+  border-left: 10px solid #ddd;
+  padding: 10px;
+  font-style: italic;
+  font-size: 0.9em;
+  float: right;
 }
 
 /**
@@ -619,17 +634,26 @@ button span {
 * @author @Freizeitler
 * @dependency _app_settingsscss
 */
-/* line 9, ../scss/sections/_main.scss */
-.main {
-  padding: 50px;
+@media (min-width: 0em) {
+  /* line 9, ../scss/sections/_main.scss */
+  .main {
+    padding: 25px 15px;
+  }
+}
+@media (min-width: 22.5em) {
+  /* line 9, ../scss/sections/_main.scss */
+  .main {
+    padding: 50px;
+  }
 }
 
-/* line 12, ../scss/sections/_main.scss */
+/* line 17, ../scss/sections/_main.scss */
 .section {
   margin-bottom: 50px;
+  clear: both;
 }
 
-/* line 15, ../scss/sections/_main.scss */
+/* line 21, ../scss/sections/_main.scss */
 .tile {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -648,7 +672,12 @@ button span {
           box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
   position: relative;
 }
-/* line 26, ../scss/sections/_main.scss */
+/* line 32, ../scss/sections/_main.scss */
+.tile p {
+  padding: 0;
+  max-width: 600px;
+}
+/* line 36, ../scss/sections/_main.scss */
 .tile .content {
   position: absolute;
   left: 0;
@@ -660,7 +689,7 @@ button span {
   padding: 0 25px;
   height: 50px;
 }
-/* line 34, ../scss/sections/_main.scss */
+/* line 44, ../scss/sections/_main.scss */
 .tile .content:before {
   content: 'content_goes_here...................................................................';
   font-size: 0.6em;
@@ -670,20 +699,20 @@ button span {
   overflow: hidden;
 }
 
-/* line 44, ../scss/sections/_main.scss */
+/* line 54, ../scss/sections/_main.scss */
 .tile-label {
-  padding: 5px 0 5px 25px;
+  padding: 5px 0 5px 17px;
   margin: -25px -25px 0 -25px;
   font-size: 0.9em;
   -webkit-border-radius: 3px 3px 0 0;
      -moz-border-radius: 3px 3px 0 0;
           border-radius: 3px 3px 0 0;
 }
-/* line 49, ../scss/sections/_main.scss */
+/* line 59, ../scss/sections/_main.scss */
 .tile-label.works {
   background: #cbe86b;
 }
-/* line 51, ../scss/sections/_main.scss */
+/* line 61, ../scss/sections/_main.scss */
 .tile-label.works:before {
   content: '\2713';
   margin-right: 5px;
@@ -699,12 +728,12 @@ button span {
   position: relative;
   font-weight: bold;
 }
-/* line 65, ../scss/sections/_main.scss */
+/* line 75, ../scss/sections/_main.scss */
 .tile-label.works-not {
   background: #e86b6b;
   color: #fff;
 }
-/* line 68, ../scss/sections/_main.scss */
+/* line 78, ../scss/sections/_main.scss */
 .tile-label.works-not:before {
   content: '\2718';
   margin-right: 5px;
@@ -720,12 +749,12 @@ button span {
   position: relative;
   font-weight: bold;
 }
-/* line 82, ../scss/sections/_main.scss */
+/* line 92, ../scss/sections/_main.scss */
 .tile-label.pending {
   background: #999;
   color: #fff;
 }
-/* line 85, ../scss/sections/_main.scss */
+/* line 95, ../scss/sections/_main.scss */
 .tile-label.pending:before {
   content: '?';
   background: #fff;
