@@ -654,6 +654,16 @@ blockquote {
 }
 
 /* line 21, ../scss/sections/_main.scss */
+.mobile-yeti {
+  width: 320px;
+}
+/* line 23, ../scss/sections/_main.scss */
+.mobile-yeti img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 28, ../scss/sections/_main.scss */
 .tile {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -672,12 +682,12 @@ blockquote {
           box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
   position: relative;
 }
-/* line 32, ../scss/sections/_main.scss */
+/* line 39, ../scss/sections/_main.scss */
 .tile p {
   padding: 0;
   max-width: 600px;
 }
-/* line 36, ../scss/sections/_main.scss */
+/* line 43, ../scss/sections/_main.scss */
 .tile .content {
   position: absolute;
   left: 0;
@@ -689,7 +699,7 @@ blockquote {
   padding: 0 25px;
   height: 50px;
 }
-/* line 44, ../scss/sections/_main.scss */
+/* line 51, ../scss/sections/_main.scss */
 .tile .content:before {
   content: 'content_goes_here...................................................................';
   font-size: 0.6em;
@@ -699,7 +709,7 @@ blockquote {
   overflow: hidden;
 }
 
-/* line 54, ../scss/sections/_main.scss */
+/* line 61, ../scss/sections/_main.scss */
 .tile-label {
   padding: 5px 0 5px 17px;
   margin: -25px -25px 0 -25px;
@@ -708,11 +718,11 @@ blockquote {
      -moz-border-radius: 3px 3px 0 0;
           border-radius: 3px 3px 0 0;
 }
-/* line 59, ../scss/sections/_main.scss */
+/* line 66, ../scss/sections/_main.scss */
 .tile-label.works {
   background: #cbe86b;
 }
-/* line 61, ../scss/sections/_main.scss */
+/* line 68, ../scss/sections/_main.scss */
 .tile-label.works:before {
   content: '\2713';
   margin-right: 5px;
@@ -728,12 +738,12 @@ blockquote {
   position: relative;
   font-weight: bold;
 }
-/* line 75, ../scss/sections/_main.scss */
+/* line 82, ../scss/sections/_main.scss */
 .tile-label.works-not {
   background: #e86b6b;
   color: #fff;
 }
-/* line 78, ../scss/sections/_main.scss */
+/* line 85, ../scss/sections/_main.scss */
 .tile-label.works-not:before {
   content: '\2718';
   margin-right: 5px;
@@ -749,12 +759,12 @@ blockquote {
   position: relative;
   font-weight: bold;
 }
-/* line 92, ../scss/sections/_main.scss */
+/* line 99, ../scss/sections/_main.scss */
 .tile-label.pending {
   background: #999;
   color: #fff;
 }
-/* line 95, ../scss/sections/_main.scss */
+/* line 102, ../scss/sections/_main.scss */
 .tile-label.pending:before {
   content: '?';
   background: #fff;

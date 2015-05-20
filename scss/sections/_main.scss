@@ -18,6 +18,13 @@
 	margin-bottom: 50px;
 	clear: both;
 }
+.mobile-yeti {
+	width: 320px;
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
 .tile {
 	box-sizing: border-box;
 	padding: 25px;
