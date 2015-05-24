@@ -44,6 +44,14 @@ $(document).ready(function() {
 
 	// load()
 	$('.jlnb').find('.content').find('span').load('/component/external-content.html .jlnb');
+	$('.jlwb').find('.js-button').on('click', function() {
+		$(this).next('.content').find('span').load('/component/external-content.html .jlwb');
+	});
+
+	// webcomponent with button
+	$('.webcwb').find('.js-button').on('click', function() {
+		Polymer.import(['/component/button-content.html']);
+	});
 });
 
 $(document).ready(function() {
