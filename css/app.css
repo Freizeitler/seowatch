@@ -572,7 +572,6 @@ blockquote {
   border-left: 10px solid #ddd;
   padding: 10px;
   font-style: italic;
-  font-size: 0.9em;
   float: right;
 }
 
@@ -609,6 +608,11 @@ blockquote {
 /* line 41, ../scss/modules/_tests.scss */
 .vhnb .content span {
   visibility: hidden;
+}
+
+/* line 49, ../scss/modules/_tests.scss */
+.ccnb .content span:before {
+  content: '[CCNB] CSS Content No Button';
 }
 
 /**

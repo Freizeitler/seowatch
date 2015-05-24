@@ -44,6 +44,14 @@
 	}
 }
 
+.ccnb {
+	.content {
+		span:before {
+			content: '[CCNB] CSS Content No Button';
+		}
+	}
+}
+
 // Media Queries (from min to max)
 @media (min-width: $breakpoint-min) { }
 
