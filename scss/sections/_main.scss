@@ -63,8 +63,10 @@
 	margin: -25px -25px 0 -25px;
 	font-size: 0.9em;
 	border-radius: 3px 3px 0 0;
+	display: block;
 	&.works {
 		background: $color-sulu;
+		color: $color-night-rider;
 		&:before {
 			content: '\2713';
 		  margin-right: 5px;

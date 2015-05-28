@@ -721,12 +721,14 @@ blockquote {
   -webkit-border-radius: 3px 3px 0 0;
      -moz-border-radius: 3px 3px 0 0;
           border-radius: 3px 3px 0 0;
+  display: block;
 }
-/* line 66, ../scss/sections/_main.scss */
+/* line 67, ../scss/sections/_main.scss */
 .tile-label.works {
   background: #cbe86b;
+  color: #1c140d;
 }
-/* line 68, ../scss/sections/_main.scss */
+/* line 70, ../scss/sections/_main.scss */
 .tile-label.works:before {
   content: '\2713';
   margin-right: 5px;
@@ -742,12 +744,12 @@ blockquote {
   position: relative;
   font-weight: bold;
 }
-/* line 82, ../scss/sections/_main.scss */
+/* line 84, ../scss/sections/_main.scss */
 .tile-label.works-not {
   background: #e86b6b;
   color: #fff;
 }
-/* line 85, ../scss/sections/_main.scss */
+/* line 87, ../scss/sections/_main.scss */
 .tile-label.works-not:before {
   content: '\2718';
   margin-right: 5px;
@@ -763,12 +765,12 @@ blockquote {
   position: relative;
   font-weight: bold;
 }
-/* line 99, ../scss/sections/_main.scss */
+/* line 101, ../scss/sections/_main.scss */
 .tile-label.pending {
   background: #999;
   color: #fff;
 }
-/* line 102, ../scss/sections/_main.scss */
+/* line 104, ../scss/sections/_main.scss */
 .tile-label.pending:before {
   content: '?';
   background: #fff;
