@@ -526,7 +526,7 @@ h1 span {
 
 /* line 31, ../scss/_base.scss */
 h2, h3 {
-  padding: 10px 25px;
+  padding: 10px 25px 10px 0;
   font-size: 1.6em;
   margin-bottom: 15px;
   border-bottom: 1px dotted #1c140d;
@@ -546,9 +546,15 @@ h4 {
 /* line 44, ../scss/_base.scss */
 p {
   padding-left: 25px;
+  max-width: 900px;
 }
 
-/* line 47, ../scss/_base.scss */
+/* line 48, ../scss/_base.scss */
+figure {
+  margin-left: 0;
+}
+
+/* line 51, ../scss/_base.scss */
 button {
   background: none;
   border: none;
@@ -560,13 +566,13 @@ button {
   width: 100%;
   line-height: 1.2;
 }
-/* line 57, ../scss/_base.scss */
+/* line 61, ../scss/_base.scss */
 button span {
   display: block;
   font-size: 0.8em;
 }
 
-/* line 62, ../scss/_base.scss */
+/* line 66, ../scss/_base.scss */
 blockquote {
   margin: 0 0 25px 100px;
   border-left: 10px solid #ddd;
@@ -650,24 +656,28 @@ blockquote {
     padding: 50px;
   }
 }
+/* line 16, ../scss/sections/_main.scss */
+.main p {
+  padding: 0;
+}
 
-/* line 17, ../scss/sections/_main.scss */
+/* line 20, ../scss/sections/_main.scss */
 .section {
   margin-bottom: 50px;
   clear: both;
 }
 
-/* line 21, ../scss/sections/_main.scss */
+/* line 24, ../scss/sections/_main.scss */
 .mobile-yeti {
   width: 320px;
 }
-/* line 23, ../scss/sections/_main.scss */
+/* line 26, ../scss/sections/_main.scss */
 .mobile-yeti img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 28, ../scss/sections/_main.scss */
+/* line 31, ../scss/sections/_main.scss */
 .tile {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -686,12 +696,7 @@ blockquote {
           box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
   position: relative;
 }
-/* line 39, ../scss/sections/_main.scss */
-.tile p {
-  padding: 0;
-  max-width: 600px;
-}
-/* line 43, ../scss/sections/_main.scss */
+/* line 42, ../scss/sections/_main.scss */
 .tile .content {
   position: absolute;
   left: 0;
@@ -703,7 +708,7 @@ blockquote {
   padding: 0 25px;
   height: 50px;
 }
-/* line 51, ../scss/sections/_main.scss */
+/* line 50, ../scss/sections/_main.scss */
 .tile .content:before {
   content: 'content_goes_here...................................................................';
   font-size: 0.6em;
@@ -713,7 +718,7 @@ blockquote {
   overflow: hidden;
 }
 
-/* line 61, ../scss/sections/_main.scss */
+/* line 60, ../scss/sections/_main.scss */
 .tile-label {
   padding: 5px 0 5px 17px;
   margin: -25px -25px 0 -25px;
@@ -723,12 +728,12 @@ blockquote {
           border-radius: 3px 3px 0 0;
   display: block;
 }
-/* line 67, ../scss/sections/_main.scss */
+/* line 66, ../scss/sections/_main.scss */
 .tile-label.works {
   background: #cbe86b;
   color: #1c140d;
 }
-/* line 70, ../scss/sections/_main.scss */
+/* line 69, ../scss/sections/_main.scss */
 .tile-label.works:before {
   content: '\2713';
   margin-right: 5px;
@@ -744,12 +749,12 @@ blockquote {
   position: relative;
   font-weight: bold;
 }
-/* line 84, ../scss/sections/_main.scss */
+/* line 83, ../scss/sections/_main.scss */
 .tile-label.works-not {
   background: #e86b6b;
   color: #fff;
 }
-/* line 87, ../scss/sections/_main.scss */
+/* line 86, ../scss/sections/_main.scss */
 .tile-label.works-not:before {
   content: '\2718';
   margin-right: 5px;
@@ -765,12 +770,12 @@ blockquote {
   position: relative;
   font-weight: bold;
 }
-/* line 101, ../scss/sections/_main.scss */
+/* line 100, ../scss/sections/_main.scss */
 .tile-label.pending {
   background: #999;
   color: #fff;
 }
-/* line 104, ../scss/sections/_main.scss */
+/* line 103, ../scss/sections/_main.scss */
 .tile-label.pending:before {
   content: '?';
   background: #fff;
