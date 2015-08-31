@@ -488,6 +488,11 @@ th {
   float: right;
 }
 
+/* line 22, ../scss/_helper.scss */
+.bv-clear-both {
+  clear: both;
+}
+
 /**
 * Basic Styles
 *

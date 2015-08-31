@@ -488,6 +488,11 @@ th {
   float: right;
 }
 
+/* line 22, ../scss/_helper.scss */
+.bv-clear-both {
+  clear: both;
+}
+
 /**
 * Basic Styles
 *
@@ -707,8 +712,10 @@ blockquote {
           box-sizing: border-box;
   padding: 0 25px;
   height: 50px;
+  margin-bottom: 0;
+  min-height: 70px;
 }
-/* line 50, ../scss/sections/_main.scss */
+/* line 52, ../scss/sections/_main.scss */
 .tile .content:before {
   content: 'content_goes_here...................................................................';
   font-size: 0.6em;
@@ -718,7 +725,7 @@ blockquote {
   overflow: hidden;
 }
 
-/* line 60, ../scss/sections/_main.scss */
+/* line 62, ../scss/sections/_main.scss */
 .tile-label {
   padding: 5px 0 5px 17px;
   margin: -25px -25px 0 -25px;
@@ -728,12 +735,12 @@ blockquote {
           border-radius: 3px 3px 0 0;
   display: block;
 }
-/* line 66, ../scss/sections/_main.scss */
+/* line 68, ../scss/sections/_main.scss */
 .tile-label.works {
   background: #cbe86b;
   color: #1c140d;
 }
-/* line 69, ../scss/sections/_main.scss */
+/* line 71, ../scss/sections/_main.scss */
 .tile-label.works:before {
   content: '\2713';
   margin-right: 5px;
@@ -749,12 +756,12 @@ blockquote {
   position: relative;
   font-weight: bold;
 }
-/* line 83, ../scss/sections/_main.scss */
+/* line 85, ../scss/sections/_main.scss */
 .tile-label.works-not {
   background: #e86b6b;
   color: #fff;
 }
-/* line 86, ../scss/sections/_main.scss */
+/* line 88, ../scss/sections/_main.scss */
 .tile-label.works-not:before {
   content: '\2718';
   margin-right: 5px;
@@ -770,12 +777,12 @@ blockquote {
   position: relative;
   font-weight: bold;
 }
-/* line 100, ../scss/sections/_main.scss */
+/* line 102, ../scss/sections/_main.scss */
 .tile-label.pending {
   background: #999;
   color: #fff;
 }
-/* line 103, ../scss/sections/_main.scss */
+/* line 105, ../scss/sections/_main.scss */
 .tile-label.pending:before {
   content: '?';
   background: #fff;
