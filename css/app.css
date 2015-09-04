@@ -655,34 +655,35 @@ blockquote {
     padding: 25px 15px;
   }
 }
-@media (min-width: 22.5em) {
+@media (min-width: 45.25em) {
   /* line 9, ../scss/sections/_main.scss */
   .main {
-    padding: 50px 75px;
+    margin: 50px 75px;
+    background-color: rgba(255, 255, 255, 0.5);
   }
 }
-/* line 16, ../scss/sections/_main.scss */
+/* line 17, ../scss/sections/_main.scss */
 .main p {
   padding: 0;
 }
 
-/* line 20, ../scss/sections/_main.scss */
+/* line 21, ../scss/sections/_main.scss */
 .section {
   margin-bottom: 50px;
   clear: both;
 }
 
-/* line 24, ../scss/sections/_main.scss */
+/* line 25, ../scss/sections/_main.scss */
 .mobile-yeti {
   width: 320px;
 }
-/* line 26, ../scss/sections/_main.scss */
+/* line 27, ../scss/sections/_main.scss */
 .mobile-yeti img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 31, ../scss/sections/_main.scss */
+/* line 32, ../scss/sections/_main.scss */
 .tile {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -701,7 +702,7 @@ blockquote {
           box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
   position: relative;
 }
-/* line 42, ../scss/sections/_main.scss */
+/* line 43, ../scss/sections/_main.scss */
 .tile .content {
   position: absolute;
   left: 0;
@@ -715,7 +716,7 @@ blockquote {
   margin-bottom: 0;
   min-height: 70px;
 }
-/* line 52, ../scss/sections/_main.scss */
+/* line 53, ../scss/sections/_main.scss */
 .tile .content:before {
   content: 'content_goes_here...................................................................';
   font-size: 0.6em;
@@ -725,7 +726,7 @@ blockquote {
   overflow: hidden;
 }
 
-/* line 62, ../scss/sections/_main.scss */
+/* line 63, ../scss/sections/_main.scss */
 .tile-label {
   padding: 5px 0 5px 17px;
   margin: -25px -25px 0 -25px;
@@ -736,12 +737,12 @@ blockquote {
   display: block;
 }
 
-/* line 70, ../scss/sections/_main.scss */
+/* line 71, ../scss/sections/_main.scss */
 .works {
   background: #cbe86b;
   color: #1c140d;
 }
-/* line 73, ../scss/sections/_main.scss */
+/* line 74, ../scss/sections/_main.scss */
 .works:before {
   content: '\2713';
   margin-right: 5px;
@@ -758,12 +759,12 @@ blockquote {
   font-weight: bold;
 }
 
-/* line 87, ../scss/sections/_main.scss */
+/* line 88, ../scss/sections/_main.scss */
 .works-not {
   background: #e86b6b;
   color: #fff;
 }
-/* line 90, ../scss/sections/_main.scss */
+/* line 91, ../scss/sections/_main.scss */
 .works-not:before {
   content: '\2718';
   margin-right: 5px;
@@ -780,12 +781,12 @@ blockquote {
   font-weight: bold;
 }
 
-/* line 104, ../scss/sections/_main.scss */
+/* line 105, ../scss/sections/_main.scss */
 .pending {
   background: #999;
   color: #fff;
 }
-/* line 107, ../scss/sections/_main.scss */
+/* line 108, ../scss/sections/_main.scss */
 .pending:before {
   content: '?';
   background: #fff;
@@ -802,11 +803,11 @@ blockquote {
   margin-right: 5px;
 }
 
-/* line 122, ../scss/sections/_main.scss */
+/* line 123, ../scss/sections/_main.scss */
 .definition {
   max-width: 900px;
 }
-/* line 124, ../scss/sections/_main.scss */
+/* line 125, ../scss/sections/_main.scss */
 .definition dt {
   float: left;
   width: 25%;
@@ -820,11 +821,11 @@ blockquote {
      -moz-border-radius: 3px;
           border-radius: 3px;
 }
-/* line 132, ../scss/sections/_main.scss */
+/* line 133, ../scss/sections/_main.scss */
 .definition dt:last-child {
   margin-bottom: 0;
 }
-/* line 136, ../scss/sections/_main.scss */
+/* line 137, ../scss/sections/_main.scss */
 .definition dd {
   float: left;
   width: 70%;
@@ -835,9 +836,21 @@ blockquote {
   padding: 5px 10px;
   margin: 0 0 10px 0;
 }
-/* line 143, ../scss/sections/_main.scss */
+/* line 144, ../scss/sections/_main.scss */
 .definition dd:last-child {
   margin-bottom: 0;
+}
+@media (min-width: 0em) {
+  /* line 137, ../scss/sections/_main.scss */
+  .definition dd {
+    min-height: 54px;
+  }
+}
+@media (min-width: 45.25em) {
+  /* line 137, ../scss/sections/_main.scss */
+  .definition dd {
+    min-height: 0;
+  }
 }
 
 /**
