@@ -658,7 +658,7 @@ blockquote {
 @media (min-width: 22.5em) {
   /* line 9, ../scss/sections/_main.scss */
   .main {
-    padding: 50px;
+    padding: 50px 75px;
   }
 }
 /* line 16, ../scss/sections/_main.scss */
