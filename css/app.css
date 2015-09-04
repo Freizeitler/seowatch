@@ -735,13 +735,14 @@ blockquote {
           border-radius: 3px 3px 0 0;
   display: block;
 }
-/* line 68, ../scss/sections/_main.scss */
-.tile-label.works {
+
+/* line 70, ../scss/sections/_main.scss */
+.works {
   background: #cbe86b;
   color: #1c140d;
 }
-/* line 71, ../scss/sections/_main.scss */
-.tile-label.works:before {
+/* line 73, ../scss/sections/_main.scss */
+.works:before {
   content: '\2713';
   margin-right: 5px;
   background: #fff;
@@ -756,13 +757,14 @@ blockquote {
   position: relative;
   font-weight: bold;
 }
-/* line 85, ../scss/sections/_main.scss */
-.tile-label.works-not {
+
+/* line 87, ../scss/sections/_main.scss */
+.works-not {
   background: #e86b6b;
   color: #fff;
 }
-/* line 88, ../scss/sections/_main.scss */
-.tile-label.works-not:before {
+/* line 90, ../scss/sections/_main.scss */
+.works-not:before {
   content: '\2718';
   margin-right: 5px;
   background: #fff;
@@ -777,13 +779,14 @@ blockquote {
   position: relative;
   font-weight: bold;
 }
-/* line 102, ../scss/sections/_main.scss */
-.tile-label.pending {
+
+/* line 104, ../scss/sections/_main.scss */
+.pending {
   background: #999;
   color: #fff;
 }
-/* line 105, ../scss/sections/_main.scss */
-.tile-label.pending:before {
+/* line 107, ../scss/sections/_main.scss */
+.pending:before {
   content: '?';
   background: #fff;
   width: 20px;
@@ -797,6 +800,44 @@ blockquote {
   position: relative;
   font-weight: bold;
   margin-right: 5px;
+}
+
+/* line 122, ../scss/sections/_main.scss */
+.definition {
+  max-width: 900px;
+}
+/* line 124, ../scss/sections/_main.scss */
+.definition dt {
+  float: left;
+  width: 25%;
+  padding: 5px 10px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  margin: 0 0 10px 0;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+/* line 132, ../scss/sections/_main.scss */
+.definition dt:last-child {
+  margin-bottom: 0;
+}
+/* line 136, ../scss/sections/_main.scss */
+.definition dd {
+  float: left;
+  width: 70%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  padding: 5px 10px;
+  margin: 0 0 10px 0;
+}
+/* line 143, ../scss/sections/_main.scss */
+.definition dd:last-child {
+  margin-bottom: 0;
 }
 
 /**
